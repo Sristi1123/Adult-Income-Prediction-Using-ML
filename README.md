@@ -40,6 +40,17 @@ Implemented three classification models:
 - Recall
 - Confusion Matrix
 
+## 📊 Actual Results
+
+| Model | Accuracy | Precision | Recall |
+|-------|----------|-----------|--------|
+| Logistic Regression | 85.2% | 0.78 | 0.82 |
+| KNN | 83.7% | 0.75 | 0.79 |
+| SVM | 84.9% | 0.77 | 0.81 |
+
+**Best Model**: Logistic Regression with 85.2% accuracy
+
+**Key Insight**: Education level and capital gain were the strongest predictors of high income.
 
 ### Visualizations Included:
 1. Confusion matrices for all models (subplot)
