@@ -45,3 +45,9 @@ Implemented three classification models:
 1. Confusion matrices for all models (subplot)
 2. Clustered bar chart comparing metrics
 3. Correlation heatmap of numerical features
+
+## 🛠 Installation & Usage
+
+### Prerequisites
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
