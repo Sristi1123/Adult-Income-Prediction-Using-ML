@@ -39,3 +39,9 @@ Implemented three classification models:
 - Precision
 - Recall
 - Confusion Matrix
+
+
+### Visualizations Included:
+1. Confusion matrices for all models (subplot)
+2. Clustered bar chart comparing metrics
+3. Correlation heatmap of numerical features
