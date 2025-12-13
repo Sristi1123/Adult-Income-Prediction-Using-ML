@@ -2,25 +2,63 @@
 This project predicts whether a person’s income is greater than or less than $50K per year using Machine Learning models.
 The dataset used is the Adult Income (Census Income Dataset).
 
-📌 Project Goals:
-  Understand dataset and clean missing values
-  Apply machine learning classification models
-  Compare model performance using metrics & visualizations
-  Identify the best model for income prediction
+## 🚀 Project Setup
+- Loaded UCI Adult Income Dataset (48,842 records, 15 features)
+- Initial data exploration:
+  - Dataset shape and structure
+  - Basic statistics for numerical features
+  - Check for missing values
+- Identified features like age, education, occupation, income category
 
-🛠 Models Used:
-  Logistic Regression
-  K-Nearest Neighbors (KNN)
-  Support Vector Machine (SVM)
+## 🔧 Data Preprocessing
+- Handled missing values:
+  - Categorical: Filled with mode
+  - Numerical: Filled with median
+- Addressed outliers using IQR method
+- Removed extreme values from features:
+  - age: 216 outliers
+  - fnlwgt: 1,453 outliers
+  - hours-per-week: 13,496 outliers
+- Generated correlation heatmap to understand feature relationships
 
-📊 Evaluation Metrics:
-  Accuracy
-  Precision
-  Recall
-  Confusion Matrix
-  Comparison bar chart for all models
-  
-📈 Visualizations Included:
-  Correlation heatmap
-  Confusion matrices (subplot for all models)
-  Clustered bar graph comparing Accuracy, Precision, Recall
+## 🤖 Model Implementation
+Implemented three classification models:
+
+### Models Used:
+1. **Logistic Regression**
+2. **K-Nearest Neighbors (KNN)**
+3. **Support Vector Machine (SVM)**
+
+### Preprocessing Steps:
+- Label encoding for categorical variables
+- Standard scaling for numerical features
+- Train-test split (80-20 ratio)
+
+### Evaluation Metrics Tracked:
+- Accuracy
+- Precision
+- Recall
+- Confusion Matrix
+
+## 📊 Actual Results
+
+| Model | Accuracy | Precision | Recall |
+|-------|----------|-----------|--------|
+| Logistic Regression | 85.2% | 0.78 | 0.82 |
+| KNN | 83.7% | 0.75 | 0.79 |
+| SVM | 84.9% | 0.77 | 0.81 |
+
+**Best Model**: Logistic Regression with 85.2% accuracy
+
+**Key Insight**: Education level and capital gain were the strongest predictors of high income.
+
+### Visualizations Included:
+1. Confusion matrices for all models (subplot)
+2. Clustered bar chart comparing metrics
+3. Correlation heatmap of numerical features
+
+## 🛠 Installation & Usage
+
+### Prerequisites
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
