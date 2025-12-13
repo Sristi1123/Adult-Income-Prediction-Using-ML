@@ -20,3 +20,22 @@ The dataset used is the Adult Income (Census Income Dataset).
   - fnlwgt: 1,453 outliers
   - hours-per-week: 13,496 outliers
 - Generated correlation heatmap to understand feature relationships
+
+## 🤖 Model Implementation
+Implemented three classification models:
+
+### Models Used:
+1. **Logistic Regression**
+2. **K-Nearest Neighbors (KNN)**
+3. **Support Vector Machine (SVM)**
+
+### Preprocessing Steps:
+- Label encoding for categorical variables
+- Standard scaling for numerical features
+- Train-test split (80-20 ratio)
+
+### Evaluation Metrics Tracked:
+- Accuracy
+- Precision
+- Recall
+- Confusion Matrix
